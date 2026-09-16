@@ -55,15 +55,6 @@ The cleaned notebook uses repository-relative data and output paths. Set these e
 - `FEATURE_CACHE_READ_DIR`: optional read-only feature-cache directory.
 - `AGENTICLS_INPUT_ROOT`: optional root searched for unambiguously named local inputs.
 
-## Running the experiment
-
-1. Install the dependencies.
-2. Prepare the dataset and local model files (or a compatible DINOv2 feature cache).
-3. Open `notebooks/01_main_experiment.ipynb` from the repository root.
-4. Review the configuration cell, run the local-model preflight if applicable, and execute cells in order.
-
-The synthetic smoke suite does not require the dataset or model weights. The final cell launches the full experiment, as in the source notebook; it is computationally expensive and requires the configured local resources.
-
 ## Reproducibility
 
 The experiment retains master seed `158`, deterministic split construction, fold-local preprocessing, content-addressed caches, a frozen blind-decision artifact, phase-order audits, and the original integrity gate. Run metadata and generated results are written beneath `outputs/` by default. GPU kernels may still vary when PyTorch can only warn about a nondeterministic operation, and results can depend on package versions, hardware, local checkpoint contents, or activation of the 4-bit fallback.
