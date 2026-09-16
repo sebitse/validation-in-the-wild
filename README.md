@@ -59,6 +59,14 @@ The cleaned notebook uses repository-relative data and output paths. Set these e
 
 The experiment retains master seed `158`, deterministic split construction, fold-local preprocessing, content-addressed caches, a frozen blind-decision artifact, phase-order audits, and the original integrity gate. Run metadata and generated results are written beneath `outputs/` by default. GPU kernels may still vary when PyTorch can only warn about a nondeterministic operation, and results can depend on package versions, hardware, local checkpoint contents, or activation of the 4-bit fallback.
 
+## Compute resources
+
+All experiments were conducted in Kaggle Notebooks on a 64-bit Linux
+environment using an Intel Xeon processor at 2.00 GHz, 31.35 GiB of system
+memory, and a single NVIDIA Tesla T4 GPU with 14.56 GiB of GPU memory.
+
+The maximum allocated GPU memory observed during execution was 4.53 GiB.
+
 ## Original Kaggle run
 
 The notebook under `original/` is preserved as the original Kaggle artifact. The notebook under `notebooks/` is a cleaned and documented version intended for repository use.
