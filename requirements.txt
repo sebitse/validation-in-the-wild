@@ -1,0 +1,13 @@
+jupyterlab
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+psutil
+Pillow
+torch
+torchvision
+transformers>=4.51.0
+accelerate
